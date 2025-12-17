@@ -225,13 +225,14 @@ class _HomePageState extends State<HomePage> {
                   });
                 },
               ),
-              IconButton(
-                icon: const ImageIcon(
-                  AssetImage('assets/images/setting.png'),
-                  color: _vscodeText,
+              GestureDetector(
+                child: IconButton(
+                  icon: const ImageIcon(
+                    AssetImage('assets/images/setting.png'),
+                    color: _vscodeText,
+                  ),
+                  onPressed: _showSettingsDialog,
                 ),
-                tooltip: '设置',
-                onPressed: _showSettingsDialog,
               ),
             ],
           ),
